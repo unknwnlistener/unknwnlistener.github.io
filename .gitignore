@@ -1,1 +1,4 @@
-./node_modules/
+
+*-lock*
+/bin
+/node_modules
