@@ -1,0 +1,29 @@
+{
+  "name": "unknwnlistener.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unknwnlistener/unknwnlistener.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "demo"
+  ],
+  "author": "Nischal Abraham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unknwnlistener/unknwnlistener.github.io/issues"
+  },
+  "homepage": "https://github.com/unknwnlistener/unknwnlistener.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  background-color: #333;
+  width: 100%;
+}
+
+.container {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.xlarge {
+  font-size: 5em;
+}
+
+.name-tag {
+  text-align: center;
+}
