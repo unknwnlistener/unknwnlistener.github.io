@@ -1,0 +1,20 @@
+$primary-color: #010030;
+$complimentary-color: #2b361a;
+$font-color: #fff;
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $primary-color;
+  color: $font-color;
+  font-size: 14px;
+}
+
+.main-content {
+  position: relative;
+  margin: 0 10%;
+}
+
+ul {
+  padding: 0;
+}

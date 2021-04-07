@@ -1,0 +1,27 @@
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 5px ridge gold;
+  #logo {
+    height: 50px;
+    width: 200px;
+    background-color: red;
+  }
+  .nav-item {
+    display: flex;
+    align-items: flex-start;
+    .item-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 1em;
+      li {
+        margin: 0 2px;
+        padding: 2px;
+      }
+    }
+  }
+}
