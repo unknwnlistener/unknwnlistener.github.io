@@ -1,0 +1,16 @@
+.control-container {
+  position: relative;
+  bottom: 0;
+  display: flex;
+
+  .actions {
+    flex-grow: 1;
+    height: 150px;
+  }
+  .filler {
+    flex-grow: 2;
+  }
+  .map {
+    flex-grow: 1;
+  }
+}

@@ -1,6 +1,7 @@
 $primary-color: #010030;
 $complimentary-color: #2b361a;
 $font-color: #fff;
+$brown-hue: #511106;
 
 body {
   height: 100%;
@@ -11,10 +12,31 @@ body {
 }
 
 .main-content {
+  height: 100vh;
   position: relative;
-  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gold-bordered {
+  border: 5px ridge gold;
+}
+
+.brown-bordered {
+  border: 5px ridge #77360f;
 }
 
 ul {
   padding: 0;
+  margin: 0;
+}
+
+.patterned-background-1 {
+  background: linear-gradient(135deg, $brown-hue 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, $brown-hue 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, $brown-hue 25%, transparent 25%),
+    linear-gradient(45deg, $brown-hue 25%, transparent 25%);
+  background-size: 2em 2em;
+  background-color: #77360f;
 }

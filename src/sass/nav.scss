@@ -2,9 +2,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  border: 5px ridge gold;
   #logo {
-    height: 50px;
+    height: 10px;
     width: 200px;
     background-color: red;
   }
@@ -21,6 +20,8 @@
       li {
         margin: 0 2px;
         padding: 2px;
+        background-color: black;
+        border: 1px ridge brown;
       }
     }
   }

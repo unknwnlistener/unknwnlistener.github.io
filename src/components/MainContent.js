@@ -1,12 +1,15 @@
 import React from "react";
 import "../styles/main.css";
 import { TopNav } from "./TopNav";
+import { ControlCenter } from "./ControlCenter";
+import { PlayArea } from "./PlayArea";
 
 export const MainContent = () => {
   return (
-    <React.Fragment>
+    <div className="main-content">
       <TopNav></TopNav>
-      <div className="main-content"></div>
-    </React.Fragment>
+      <PlayArea></PlayArea>
+      <ControlCenter></ControlCenter>
+    </div>
   );
 };

@@ -1,0 +1,17 @@
+.control-container {
+  position: relative;
+  bottom: 0;
+  display: flex;
+}
+.control-container .actions {
+  flex-grow: 1;
+  height: 150px;
+}
+.control-container .filler {
+  flex-grow: 2;
+}
+.control-container .map {
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=control.css.map */

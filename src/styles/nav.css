@@ -2,10 +2,9 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  border: 5px ridge gold;
 }
 .nav-container #logo {
-  height: 50px;
+  height: 10px;
   width: 200px;
   background-color: red;
 }
@@ -24,6 +23,8 @@
 .nav-container .nav-item .item-list li {
   margin: 0 2px;
   padding: 2px;
+  background-color: black;
+  border: 1px ridge brown;
 }
 
 /*# sourceMappingURL=nav.css.map */
