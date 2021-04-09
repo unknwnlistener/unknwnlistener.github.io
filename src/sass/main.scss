@@ -1,14 +1,16 @@
-$primary-color: #010030;
-$complimentary-color: #2b361a;
-$font-color: #fff;
-$brown-hue: #511106;
+@use "variables" as v;
 
 body {
   height: 100%;
   width: 100%;
-  background-color: $primary-color;
-  color: $font-color;
+  background-color: v.$primary-color;
+  color: v.$font-color;
   font-size: 14px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.5em;
 }
 
 .main-content {
@@ -16,15 +18,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .gold-bordered {
   border: 5px ridge gold;
-}
-
-.brown-bordered {
-  border: 5px ridge #77360f;
 }
 
 ul {
@@ -32,11 +29,6 @@ ul {
   margin: 0;
 }
 
-.patterned-background-1 {
-  background: linear-gradient(135deg, $brown-hue 25%, transparent 25%) -50px 0,
-    linear-gradient(225deg, $brown-hue 25%, transparent 25%) -50px 0,
-    linear-gradient(315deg, $brown-hue 25%, transparent 25%),
-    linear-gradient(45deg, $brown-hue 25%, transparent 25%);
-  background-size: 2em 2em;
-  background-color: #77360f;
+.no-border {
+  border: 0px;
 }

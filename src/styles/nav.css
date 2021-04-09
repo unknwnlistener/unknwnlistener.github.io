@@ -1,21 +1,26 @@
 .nav-container {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding: 1em 0;
+  margin: 0.5em;
+  font-size: 2em;
 }
 .nav-container #logo {
-  height: 10px;
+  height: 50px;
   width: 200px;
   background-color: red;
 }
 .nav-container .nav-item {
+  width: 30%;
   display: flex;
   align-items: flex-start;
 }
 .nav-container .nav-item .item-list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
   list-style: none;
   text-transform: uppercase;
   font-size: 1em;
@@ -23,8 +28,6 @@
 .nav-container .nav-item .item-list li {
   margin: 0 2px;
   padding: 2px;
-  background-color: black;
-  border: 1px ridge brown;
 }
 
 /*# sourceMappingURL=nav.css.map */

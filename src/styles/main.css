@@ -1,9 +1,14 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #010030;
-  color: #fff;
+  background-color: #86e98a;
+  color: #ff006a;
   font-size: 14px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.5em;
 }
 
 .main-content {
@@ -11,15 +16,10 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .gold-bordered {
   border: 5px ridge gold;
-}
-
-.brown-bordered {
-  border: 5px ridge #77360f;
 }
 
 ul {
@@ -27,10 +27,8 @@ ul {
   margin: 0;
 }
 
-.patterned-background-1 {
-  background: linear-gradient(135deg, #511106 25%, transparent 25%) -50px 0, linear-gradient(225deg, #511106 25%, transparent 25%) -50px 0, linear-gradient(315deg, #511106 25%, transparent 25%), linear-gradient(45deg, #511106 25%, transparent 25%);
-  background-size: 2em 2em;
-  background-color: #77360f;
+.no-border {
+  border: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
