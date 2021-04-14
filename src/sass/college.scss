@@ -1,0 +1,35 @@
+@use "variables" as v;
+.college {
+  display: block;
+  padding: 1em;
+  font-size: 0.7em;
+
+  .time-and-place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .when,
+  .where {
+    text-transform: uppercase;
+  }
+
+  .what {
+    .degree {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 0.8em;
+    }
+    .degree::first-letter {
+      font-size: 1.2em;
+    }
+    .college-name {
+      font-style: italic;
+      color: v.$complimentary-color;
+    }
+  }
+  .what + .more {
+    color: v.$dark-color;
+  }
+}

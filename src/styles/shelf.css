@@ -1,0 +1,38 @@
+.library {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+.library h1 {
+  font-size: 2em;
+  position: absolute;
+  top: -0.5em;
+  color: #ff006a;
+}
+.library p .highlight {
+  color: #ff8600;
+  font-weight: bolder;
+}
+.library .section {
+  font-size: 1.5em;
+  flex: 1 0;
+  margin: 3em 1em;
+  padding: 0 1.5em;
+  border-radius: 20px;
+}
+.neumorphism-1 {
+  border-radius: 30px;
+  background: #86e98a;
+  box-shadow: inset 10px 10px 20px #72c675, inset -10px -10px 20px #9aff9f;
+}
+
+.neumorphism-2 {
+  border-radius: 30px;
+  background: #86e98a;
+  box-shadow: 6px 6px 12px #72c675, -6px -6px 12px #9aff9f;
+}
+
+/*# sourceMappingURL=shelf.css.map */

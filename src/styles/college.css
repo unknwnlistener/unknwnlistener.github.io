@@ -1,0 +1,32 @@
+.college {
+  display: block;
+  padding: 1em;
+  font-size: 0.7em;
+}
+.college .time-and-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.college .when,
+.college .where {
+  text-transform: uppercase;
+}
+.college .what .degree {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.8em;
+}
+.college .what .degree::first-letter {
+  font-size: 1.2em;
+}
+.college .what .college-name {
+  font-style: italic;
+  color: #0079ff;
+}
+.college .what + .more {
+  color: black;
+}
+
+/*# sourceMappingURL=college.css.map */
