@@ -1,19 +1,13 @@
-@use "variables" as v;
+@use "variables2" as v;
 
 .library {
   position: relative;
   display: flex;
-  flex-direction: row;
-  height: 100%;
+  flex-direction: column;
+  // height: 40vh;
   width: 100%;
   color: v.$dark-color;
 
-  h1 {
-    font-size: 2em;
-    position: absolute;
-    top: -0.5em;
-    color: v.$h1-color;
-  }
   p {
     .highlight {
       color: v.$em-color;
@@ -21,12 +15,22 @@
     }
   }
   .section {
+    h1 {
+      font-size: 2em;
+      position: relative;
+      top: -0.5em;
+      color: v.$h1-color;
+      text-align: center;
+      position: relative;
+    }
     font-size: 1.5em;
     flex: 1 0;
     // height: 50%;
     margin: 3em 1em;
     padding: 0 1.5em;
     border-radius: 20px;
+  }
+  .about-me {
   }
   .education {
   }

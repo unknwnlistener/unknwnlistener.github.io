@@ -1,19 +1,12 @@
 .library {
   position: relative;
   display: flex;
-  flex-direction: row;
-  height: 100%;
+  flex-direction: column;
   width: 100%;
   color: black;
 }
-.library h1 {
-  font-size: 2em;
-  position: absolute;
-  top: -0.5em;
-  color: #ff006a;
-}
 .library p .highlight {
-  color: #ff8600;
+  color: #003e19;
   font-weight: bolder;
 }
 .library .section {
@@ -22,6 +15,14 @@
   margin: 3em 1em;
   padding: 0 1.5em;
   border-radius: 20px;
+}
+.library .section h1 {
+  font-size: 2em;
+  position: relative;
+  top: -0.5em;
+  color: #ff006a;
+  text-align: center;
+  position: relative;
 }
 .neumorphism-1 {
   border-radius: 30px;

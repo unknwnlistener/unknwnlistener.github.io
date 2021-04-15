@@ -10,7 +10,7 @@ export const ContentDescription = ({
 }) => {
   return (
     <div className="college">
-      <div class="time-and-place">
+      <div className="time-and-place">
         <div className="when">{year}</div>
         <div className="where">{place}</div>
       </div>
@@ -18,7 +18,13 @@ export const ContentDescription = ({
         <span className="degree">{degree}</span>,{" "}
         <span className="college-name">{collegeName}</span>
       </div>
-      <div className="what more">{desc}</div>
+      <div className="what more">
+        <ul>
+          {desc.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

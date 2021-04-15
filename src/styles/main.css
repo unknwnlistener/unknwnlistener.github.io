@@ -1,7 +1,7 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #86e98a;
+  background-color: #7bc5ae;
   color: #ff006a;
   font-size: 14px;
 }
@@ -29,6 +29,11 @@ ul {
 
 .no-border {
   border: 0px;
+}
+
+.center-text {
+  text-align: center;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

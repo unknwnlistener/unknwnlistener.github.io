@@ -28,6 +28,10 @@
 .nav-container .nav-item .item-list li {
   margin: 0 2px;
   padding: 2px;
+  cursor: pointer;
+}
+.nav-container .nav-item .item-list .active {
+  background: linear-gradient(pink 0 0) 0 bottom/100% 3px no-repeat;
 }
 
 /*# sourceMappingURL=nav.css.map */

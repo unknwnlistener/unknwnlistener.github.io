@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "variables2" as v;
 
 body {
   height: 100%;
@@ -31,4 +31,9 @@ ul {
 
 .no-border {
   border: 0px;
+}
+
+.center-text {
+  text-align: center;
+  position: relative;
 }
