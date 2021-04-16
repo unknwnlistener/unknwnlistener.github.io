@@ -3,23 +3,32 @@ import { ContentDescription } from "./ContentDescription";
 import "../styles/shelf.css";
 
 export const Shelves = () => {
-  const [active, setActive] = useState("none");
-  const sections = ["about", "experience", "education"];
+  const [active, setActive] = useState([false, false, false]);
+  // const sections = ["about", "experience", "education"];
+
   let handleClick = (section) => {
-    console.log("Click happened", section);
-    setActive(section);
+    let current = [...active];
+    current[section] = !current[section];
+
+    setActive(current);
   };
   return (
     <div className="library">
-      <div className="section center-text">
-        <h1 onClick={() => handleClick(sections[0])}>About Me</h1>
+      <div
+        id="about"
+        className={(active[0] ? "activate" : "") + " section center-text"}
+      >
+        <h1 onClick={() => handleClick(0)}>About Me</h1>
         <p>
-          Hi I'm <span className="highlight">Nischal Abraham</span>. I'm a web
-          developer
+          Hello! My name is <span className="highlight">Nischal Abraham</span>.
+          I'm a web developer
         </p>
       </div>
-      <div className="section">
-        <h1 onClick={() => handleClick(sections[1])}>Experience</h1>
+      <div
+        id="experience"
+        className={(active[1] ? "activate" : "") + " section"}
+      >
+        <h1 onClick={() => handleClick(1)}>Experience</h1>
         <ContentDescription
           collegeName="Media.net"
           year="July 2017 - August 2019"
@@ -34,8 +43,11 @@ export const Shelves = () => {
           ]}
         ></ContentDescription>
       </div>
-      <div className="section">
-        <h1 onClick={() => handleClick("education")}>Education</h1>
+      <div
+        id="education"
+        className={(active[2] ? "activate" : "") + " section"}
+      >
+        <h1 onClick={() => handleClick(2)}>Education</h1>
         <ContentDescription
           collegeName="National University of Ireland Maynooth"
           year="September 2019 - July 2020"

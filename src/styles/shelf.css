@@ -18,7 +18,8 @@
   padding: 0 1.5em;
   border-radius: 10px;
   max-height: 65px;
-  transition: 1s;
+  height: 65px;
+  transition: 0.5s ease-out;
 }
 .library .section h1 {
   font-size: 2em;
@@ -28,8 +29,9 @@
   position: relative;
   color: #c57b92;
 }
-.library .section + .activate {
-  max-height: 100%;
+.library .activate {
+  max-height: 1000px;
+  height: 100%;
 }
 
 .neumorphism-1 {

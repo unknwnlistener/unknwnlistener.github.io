@@ -32,10 +32,12 @@
     padding: 0 1.5em;
     border-radius: 10px;
     max-height: 65px;
-    transition: 1s;
-    & + .activate {
-      max-height: 100%;
-    }
+    height: 65px;
+    transition: 0.5s ease-out;
+  }
+  .activate {
+    max-height: 1000px;
+    height: 100%;
   }
 }
 
