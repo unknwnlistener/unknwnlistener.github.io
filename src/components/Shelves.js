@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { ContentDescription } from "./ContentDescription";
 import "../styles/shelf.css";
 
 export const Shelves = () => {
+  const [active, setActive] = useState("none");
+  const sections = ["about", "experience", "education"];
+  let handleClick = (section) => {
+    console.log("Click happened", section);
+    setActive(section);
+  };
   return (
     <div className="library">
-      <div className="section gold-bordered about-me center-text">
-        <h1>About Me</h1>
+      <div className="section center-text">
+        <h1 onClick={() => handleClick(sections[0])}>About Me</h1>
         <p>
           Hi I'm <span className="highlight">Nischal Abraham</span>. I'm a web
           developer
         </p>
       </div>
-      <div className="section gold-bordered experience">
-        <h1>Experience</h1>
+      <div className="section">
+        <h1 onClick={() => handleClick(sections[1])}>Experience</h1>
         <ContentDescription
           collegeName="Media.net"
           year="July 2017 - August 2019"
           place="Mumbai, India"
           degree="Web Application Developer"
           desc={[
-            "Perform Media (www.performmedia.com): Company to Publisher advertising platform connecting US clients Yahoo/MSN, Forbes, Reuters to Advertisers",
+            "Perform Media (www.performmedia.com): Company to Publisher advertising platform connecting clients Yahoo/MSN, Forbes, Reuters to Advertisers",
             "Improved client interactions by saving time spent by 40%, through the development for excel and CSV file import feature in parsing Ad Campaign information for storage in system.",
             "Reduced collaborative errors for the front-end team by 20% and updated Continuous Integration(CI) by redesigning version control workflow from Apache SVN to Git workflow.",
             "Enhanced personal knowledge base for Digital Marketing through development for Search Engine Optimization(SEO), Google AdWords and AdSense.",
@@ -28,8 +34,8 @@ export const Shelves = () => {
           ]}
         ></ContentDescription>
       </div>
-      <div className="section gold-bordered education">
-        <h1>Education</h1>
+      <div className="section">
+        <h1 onClick={() => handleClick("education")}>Education</h1>
         <ContentDescription
           collegeName="National University of Ireland Maynooth"
           year="September 2019 - July 2020"

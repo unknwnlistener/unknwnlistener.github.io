@@ -10,20 +10,28 @@
   font-weight: bolder;
 }
 .library .section {
+  background: #7bc5ae;
   font-size: 1.5em;
   flex: 1 0;
-  margin: 3em 1em;
+  overflow: hidden;
+  margin: 1em;
   padding: 0 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
+  max-height: 65px;
+  transition: 1s;
 }
 .library .section h1 {
   font-size: 2em;
   position: relative;
   top: -0.5em;
-  color: #ff006a;
   text-align: center;
   position: relative;
+  color: #c57b92;
 }
+.library .section + .activate {
+  max-height: 100%;
+}
+
 .neumorphism-1 {
   border-radius: 30px;
   background: #86e98a;
