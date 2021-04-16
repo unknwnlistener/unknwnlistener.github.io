@@ -1,7 +1,7 @@
 .college {
   display: block;
   padding: 1em;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 .college .time-and-place {
   display: flex;
@@ -27,6 +27,25 @@
 }
 .college .what + .more {
   color: black;
+  width: 90%;
+  text-align: justify;
+  font-size: 0.9em;
+}
+.college .what + .more ul {
+  margin-left: 0.5em;
+}
+.college .what + .more ul li {
+  list-style-type: none;
+  margin-bottom: 0.2em;
+}
+.college .what + .more ul li:first-child {
+  font-size: 1.1em;
+}
+.college .what + .more ul li:not(:first-child)::before {
+  content: " - ";
+}
+.college .what + .more ul li:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=college.css.map */

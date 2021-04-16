@@ -2,7 +2,7 @@
 .college {
   display: block;
   padding: 1em;
-  font-size: 0.7em;
+  font-size: 0.9em;
 
   .time-and-place {
     display: flex;
@@ -31,5 +31,24 @@
   }
   .what + .more {
     color: v.$dark-color;
+    width: 90%;
+    text-align: justify;
+    font-size: 0.9em;
+    ul {
+      margin-left: 0.5em;
+      li {
+        list-style-type: none;
+        margin-bottom: 0.2em;
+        &:first-child {
+          font-size: 1.1em;
+        }
+        &:not(:first-child)::before {
+          content: " - ";
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
