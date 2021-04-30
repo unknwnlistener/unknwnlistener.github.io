@@ -2,7 +2,7 @@ import React from "react";
 import { ContentDescription } from "./ContentDescription";
 import "../styles/shelf.css";
 
-export const Shelves = () => {
+export const Content = () => {
   return (
     <div className="library">
       <div className="section neumorphism-2 about-me">

@@ -1,33 +1,39 @@
 .nav-container {
   position: relative;
+  font-size: 2rem;
+  border: 1px solid var(--black);
   display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
-  margin: 0.5em;
-  font-size: 2em;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
 }
-.nav-container #logo {
-  height: 50px;
-  width: 200px;
-  background-color: red;
+.nav-container__logo {
+  height: 160px;
+  width: 250px;
+  background-color: var(--black);
+  margin: 1em;
 }
-.nav-container .nav-item {
-  width: 30%;
+.nav-container__item {
   display: flex;
   align-items: flex-start;
 }
-.nav-container .nav-item .item-list {
+.nav-container__item .item-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   width: 100%;
-  list-style: none;
   text-transform: uppercase;
-  font-size: 1em;
 }
-.nav-container .nav-item .item-list li {
+
+.item-list .item-list__button {
+  padding: 1em;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  margin: 1em 0;
+  font-size: 1.2rem;
+}
+
+.nav-container__item .item-list li {
   margin: 0 2px;
   padding: 2px;
 }
-
-/*# sourceMappingURL=nav.css.map */

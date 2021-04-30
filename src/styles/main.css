@@ -1,25 +1,31 @@
+:root {
+  --black: #000;
+  --white: #fff;
+
+  --font-color: var(--black);
+  --bg-color: var(--white);
+
+  --footer-color: var(--black);
+}
+
 body {
   height: 100%;
   width: 100%;
-  background-color: #86e98a;
-  color: #ff006a;
+  background-color: var(--bg-color);
+  color: (--font-color);
   font-size: 14px;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.5em;
+  font-size: 2rem;
 }
 
-.main-content {
+.main-container {
   height: 100vh;
   position: relative;
   display: flex;
-  flex-direction: column;
-}
-
-.gold-bordered {
-  border: 5px ridge gold;
+  flex-direction: row;
+  border: 1px solid red;
 }
 
 ul {
@@ -27,8 +33,12 @@ ul {
   margin: 0;
 }
 
-.no-border {
-  border: 0px;
+.footer {
+  font-size: 1rem;
+  color: var(--footer-color);
+  margin: 1em;
 }
 
-/*# sourceMappingURL=main.css.map */
+button {
+  cursor: pointer;
+}
