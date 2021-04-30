@@ -5,3 +5,7 @@ For all the experience I have as a developer I have very little to show for it, 
 # Contributions
 
 If you have any suggestions for thing I could improve on I would love the feedback. I'm still new to Open Source and contribution so bear with me while I set up a format and flow for help.
+
+# Pending Tasks
+
+[] Change Experience to a Timeline
