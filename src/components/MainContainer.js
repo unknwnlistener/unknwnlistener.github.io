@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/main.css";
 import { SideNav } from "./SideNav";
 import { AboutMe } from "./AboutMe";
-import { Experience } from "./Experience";
+import { Experience } from "./Timeline";
 // import { Projects } from "./Projects";
 import { WIP } from "./WIP";
 

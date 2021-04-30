@@ -1,33 +1,32 @@
 .content-container {
   position: relative;
-  height: 100%;
-  width: 100%;
-  color: var(--font-color);
-  display: block;
-}
-.content-container__section {
-  display: block;
-  margin: 10em;
-}
-
-.content-container__section h1 {
-  font-size: 5rem;
-}
-.content-container__section p {
-  font-size: 1.2rem;
-}
-
-.wip-container {
-  position: relative;
-  height: 100%;
   width: 100%;
   color: var(--font-color);
   display: flex;
-  justify-content: center;
+  margin: 1em 10em;
   align-items: center;
 }
 
-.wip-container_ h1 {
+.content-container h1 {
+  font-size: 5rem;
+}
+.content-container .large-p {
+  font-size: 1.2rem;
+}
+.content-container__section {
+  height: 80%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.wip-container {
+  width: 100%;
+  color: var(--font-color);
+  margin: 5rem;
+}
+
+.wip-container h1 {
   font-size: 6rem;
 }
 

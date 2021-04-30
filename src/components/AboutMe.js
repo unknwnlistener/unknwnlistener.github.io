@@ -6,7 +6,7 @@ export const AboutMe = () => {
     <div className="content-container">
       <div className="content-container__section">
         <h1>About Me</h1>
-        <p>
+        <p className="large-p">
           Hi I'm <span className="highlight">Nischal Abraham</span>. I'm a web
           developer
         </p>
