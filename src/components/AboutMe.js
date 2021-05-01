@@ -4,7 +4,7 @@ import "../styles/content.css";
 export const AboutMe = () => {
   return (
     <div className="content-container">
-      <div className="content-container__section">
+      <div className="content">
         <h1>About Me</h1>
         <p className="large-p">
           Hi my name is <span className="highlight">Nischal Abraham</span>. I'd

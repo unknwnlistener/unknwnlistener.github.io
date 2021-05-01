@@ -8,12 +8,12 @@
 }
 
 .content-container h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .content-container .large-p {
   font-size: 1.2rem;
 }
-.content-container__section {
+.content {
   height: 80%;
   position: relative;
   display: flex;
