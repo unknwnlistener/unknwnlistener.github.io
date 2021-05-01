@@ -29,6 +29,10 @@ h1 {
   font-size: 2rem;
 }
 
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
 .main-container {
   height: 100vh;
   background-color: var(--white);

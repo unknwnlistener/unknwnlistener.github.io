@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
+import self from "../assets/self.png";
 
 export const SideNav = ({ tabList, currentTab, setTab }) => {
   let activateTab = (tab) => {
@@ -10,7 +11,9 @@ export const SideNav = ({ tabList, currentTab, setTab }) => {
   };
   return (
     <div className="nav-container">
-      <div className="nav-container__logo"></div>
+      <div className="nav-container__logo">
+        <img src={self} alt="Edited profile of Nischal" />
+      </div>
       <div className="nav-container__item">
         <ul className="item-list">
           <button

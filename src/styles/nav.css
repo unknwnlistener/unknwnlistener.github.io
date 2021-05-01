@@ -8,11 +8,16 @@
   width: 25%;
 }
 .nav-container__logo {
-  height: 160px;
-  width: 250px;
-  background-color: var(--black);
+  height: 200px;
+  width: 200px;
   margin: 1em;
 }
+.nav-container__logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
 .nav-container__item {
   display: flex;
   align-items: flex-start;
