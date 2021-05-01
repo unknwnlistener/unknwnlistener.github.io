@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/main.css";
 import { SideNav } from "./SideNav";
 import { AboutMe } from "./AboutMe";
-import { Experience } from "./Timeline";
+import { Timeline } from "./Timeline";
 // import { Projects } from "./Projects";
 import { WIP } from "./WIP";
 
@@ -16,7 +16,7 @@ export const MainContainer = () => {
   if (currentTab === tabs[0]) {
     contentArea = <AboutMe />;
   } else if (currentTab === tabs[1]) {
-    contentArea = <Experience />;
+    contentArea = <Timeline />;
   } else {
     contentArea = <WIP />;
   }

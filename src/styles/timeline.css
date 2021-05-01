@@ -8,17 +8,50 @@
   background-color: hsl(0, 0%, 50%); /*var(--black);*/
 }
 
+.timeline-content {
+  margin-top: 0;
+}
+
+.timeline-content ~ .timeline-content {
+  margin-top: 3rem;
+}
+
+.timeline-content::before {
+  position: absolute;
+  margin-top: 1.8rem;
+  left: -3rem;
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: var(--black);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--black), 0 0 0 4px var(--white);
+}
+
 .content__section .duration {
   font-size: 0.8rem;
+  margin-bottom: 0.25rem;
 }
 .content__section .title {
+  /* text-align: center; */
+  font-weight: 700;
   font-size: 1.2rem;
 }
 
 .content__section .subtitle {
+  /* text-align: center; */
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .content__section .description {
   font-size: 1rem;
+  width: 80%;
+  padding-left: 1rem;
+  text-align: justify;
+}
+
+.content__section a {
+  text-decoration: underline;
+  color: var(--link-color);
 }

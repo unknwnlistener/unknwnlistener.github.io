@@ -4,13 +4,25 @@ import "../styles/timeline.css";
 
 import { TimelineContent } from "./TimelineContent";
 
-export const Experience = () => {
+export const Timeline = () => {
   return (
-    <div className="content-container">
+    <div className="content-container spacing">
       <div className="content">
-        <h1>Experience</h1>
+        <h1>Timeline</h1>
         <section className="content__section">
           <div className="timeline-path"></div>
+          <TimelineContent
+            duration={"November 2020 - Present"}
+            title={"Postal Bible School"}
+            subtitle={"Office Administration"}
+            link={"https://www.postalbibleschool.ie/"}
+            linkDesc={"Postal Bible School|Website"}
+          ></TimelineContent>
+          <TimelineContent
+            duration={"September 2019 - July 2020"}
+            title={"National University of Ireland, Maynooth"}
+            subtitle={"Masters in Computer Science"}
+          ></TimelineContent>
           <TimelineContent
             duration={"July 2017 - August 2019"}
             title={"Media.net"}

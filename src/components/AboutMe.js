@@ -3,7 +3,7 @@ import "../styles/content.css";
 
 export const AboutMe = () => {
   return (
-    <div className="content-container">
+    <div className="content-container spacing">
       <div className="content">
         <h1>About Me</h1>
         <p className="large-p">
