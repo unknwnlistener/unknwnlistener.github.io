@@ -8,7 +8,7 @@ export const Timeline = () => {
   return (
     <div className="content-container spacing">
       <div className="content">
-        <h1>Timeline</h1>
+        <h1>What I've done</h1>
         <section className="content__section">
           <div className="timeline-path"></div>
           <TimelineContent

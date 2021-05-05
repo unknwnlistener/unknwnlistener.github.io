@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
     <div className="content-container spacing">
       <div className="content">
-        <h1>About Me</h1>
+        <h1>Who am I?</h1>
         <p className="large-p">
           Hi my name is <span className="highlight">Nischal Abraham</span>. I'd
           call myself overeducated but there is always so much more to learn!

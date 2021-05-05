@@ -5,7 +5,7 @@ export const Projects = () => {
   return (
     <div className="content-container">
       <div className="content-container__section">
-        <h1>Projects</h1>
+        <h1>What I'm doing</h1>
       </div>
     </div>
   );

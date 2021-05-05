@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/nav.css";
 import self from "../assets/self.png";
 
-export const SideNav = ({ tabList, currentTab, setTab }) => {
+export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   let activateTab = (tab, e) => {
     console.log(e);
     if (tab === currentTab) return;
@@ -23,30 +23,16 @@ export const SideNav = ({ tabList, currentTab, setTab }) => {
       </div>
       <div className="nav-container__item">
         <ul className="item-list">
-          <button
-            onClick={() => activateTab(tabList[0])}
-            className={getClassesButton(0)}
-          >
-            Who am I?
-          </button>
-          <button
-            onClick={() => activateTab(tabList[1])}
-            className={getClassesButton(1)}
-          >
-            What I've done
-          </button>
-          <button
-            onClick={() => activateTab(tabList[2])}
-            className={getClassesButton(2)}
-          >
-            What I'm doing
-          </button>
-          <button
-            onClick={() => activateTab(tabList[3])}
-            className={getClassesButton(3)}
-          >
-            Want to say hi?
-          </button>
+          {tabList.map((tab, index) => {
+            return (
+              <button
+                onClick={() => activateTab(tab)}
+                className={getClassesButton(index)}
+              >
+                {tabTitles[index]}
+              </button>
+            );
+          })}
         </ul>
       </div>
       <footer className="footer">Coded by Me!</footer>

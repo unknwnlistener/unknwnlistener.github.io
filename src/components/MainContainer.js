@@ -7,7 +7,8 @@ import { Timeline } from "./Timeline";
 import { WIP } from "./WIP";
 
 export const MainContainer = () => {
-  let tabs = ["about", "experience", "projects"];
+  let tabs = ["about", "timeline", "projects", "contact"];
+  let tabTitles = ["About Me", "Timeline", "Projects", "Contact"];
 
   let [currentTab, setTab] = useState(tabs[0]);
   let [darkToggle, setDarkToggle] = useState(false);
@@ -36,7 +37,12 @@ export const MainContainer = () => {
         />
         <span className="control"></span>
       </label>
-      <SideNav tabList={tabs} currentTab={currentTab} setTab={setTab}></SideNav>
+      <SideNav
+        tabTitles={tabTitles}
+        tabList={tabs}
+        currentTab={currentTab}
+        setTab={setTab}
+      ></SideNav>
       {contentArea}
     </div>
   );
