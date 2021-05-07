@@ -3,6 +3,7 @@ import "../styles/main.css";
 import { SideNav } from "./SideNav";
 import { AboutMe } from "./AboutMe";
 import { Timeline } from "./Timeline";
+import { Projects } from "./Projects";
 // import { Projects } from "./Projects";
 import { WIP } from "./WIP";
 
@@ -14,12 +15,18 @@ export const MainContainer = () => {
   let [darkToggle, setDarkToggle] = useState(false);
 
   let contentArea;
-  if (currentTab === tabs[0]) {
-    contentArea = <AboutMe />;
-  } else if (currentTab === tabs[1]) {
-    contentArea = <Timeline />;
-  } else {
-    contentArea = <WIP />;
+  switch (currentTab) {
+    case tabs[0]:
+      contentArea = <AboutMe />;
+      break;
+    case tabs[1]:
+      contentArea = <Timeline />;
+      break;
+    case tabs[2]:
+      contentArea = <Projects />;
+      break;
+    default:
+      contentArea = <WIP />;
   }
 
   let toggleDark = () => {

@@ -1,0 +1,34 @@
+.image-container {
+  position: relative;
+  cursor: pointer;
+  margin: 0.5rem;
+  width: 400px;
+  overflow-y: hidden;
+}
+
+.image-container img {
+  width: 400px;
+}
+
+.image-container .image__desc {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-bottom: -150px;
+  left: 0;
+  bottom: 0;
+  transition: margin 0.15s linear;
+}
+
+.image-container img:hover + .image__desc {
+  display: block;
+  pointer-events: none;
+  margin-bottom: 5px;
+}
+
+.projects > .content__section {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}

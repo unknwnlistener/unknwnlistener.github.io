@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
-import self from "../assets/self.png";
+import self from "../assets/sketch_self.png";
 
 export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   let activateTab = (tab, e) => {
