@@ -51,3 +51,18 @@
   margin: 0 2px;
   padding: 2px;
 }
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+footer .social-links {
+  margin: 0 auto;
+}
+.footer .social-links .spacer {
+  margin: 0 1rem;
+}
+
+footer .credits {
+  margin: 0 auto;
+}

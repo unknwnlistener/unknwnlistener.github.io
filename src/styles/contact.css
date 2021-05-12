@@ -1,0 +1,50 @@
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  color: black;
+}
+
+.input-container {
+  margin: 0.5rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.input-container .form__input {
+  cursor: text;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  padding: 1.75rem 1rem 0.5rem;
+  width: inherit;
+}
+
+.input-container label {
+  font-size: 1rem;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  padding: 0.25rem 1.1rem;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+form .form__input:focus + label {
+  margin-top: 0;
+  top: 0;
+  font-size: 0.7rem;
+  background-color: hsl(0, 0%, 50%);
+  width: 100%;
+}
+
+.input-container textarea {
+  resize: none;
+}
+
+form button {
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  color: inherit;
+}

@@ -8,4 +8,12 @@ If you have any suggestions for thing I could improve on I would love the feedba
 
 # Pending Tasks
 
-[] Change Experience to a Timeline
+- [x] Change Experience to a Timeline
+- [ ] Update Contact Us Page
+- [ ] Add more projects to the Projects section
+
+## Inspiration
+
+- [Cassidy Williams](https://cassidoo.co/)
+- [Jemima Abu](https://www.jemimaabu.com/)
+- [Marcus Artis](https://marcusartis.pixpa.com/)

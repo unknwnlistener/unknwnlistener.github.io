@@ -4,7 +4,7 @@ import { SideNav } from "./SideNav";
 import { AboutMe } from "./AboutMe";
 import { Timeline } from "./Timeline";
 import { Projects } from "./Projects";
-// import { Projects } from "./Projects";
+import { ContactForm } from "./Contact";
 import { WIP } from "./WIP";
 
 export const MainContainer = () => {
@@ -24,6 +24,9 @@ export const MainContainer = () => {
       break;
     case tabs[2]:
       contentArea = <Projects />;
+      break;
+    case tabs[3]:
+      contentArea = <ContactForm />;
       break;
     default:
       contentArea = <WIP />;

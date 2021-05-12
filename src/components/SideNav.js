@@ -35,7 +35,14 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
           })}
         </ul>
       </div>
-      <footer className="footer">Coded by Me!</footer>
+      <footer className="footer">
+        <div className="social-links">
+          <a href="https://github.com/unknwnlistener">github</a>
+          <span className="spacer">|</span>
+          <a href="https://linkedin.com/in/nischalabraham">linkedin</a>
+        </div>
+        <div className="credits">Coded by Nischal</div>
+      </footer>
     </div>
   );
 };
