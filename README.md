@@ -1,6 +1,6 @@
-# Hi! My name is Nischal and this is an attempt at developing a portfolio website
+# Hi! My name is Nischal and this is an attempt at developing my portfolio website
 
-For all the experience I have as a developer I have very little to show for it, and no place to show even that! So here's to fixing one of those problems by having a place to display my (few) work.
+For all the experience I have as a developer I have very little to show for it, and no place to show even that! So here's to fixing one of those problems by having a place to display my (few) works. This is v1 for me and I'd appreciate any criticism or feedback you have for me 😊.
 
 # Contributions
 
@@ -9,8 +9,12 @@ If you have any suggestions for thing I could improve on I would love the feedba
 # Pending Tasks
 
 - [x] Change Experience to a Timeline
-- [ ] Update Contact Us Page
-- [ ] Add more projects to the Projects section
+- [x] Update Contact Us Page
+- [x] Add more projects to the Projects section
+- [ ] Projects: Add title, link to GitHub page, navigation and better description
+- [ ] Timeline: Better descriptions
+- [ ] Make the whole site mobile viewable
+- [ ] Add a colour scheme
 
 ## Inspiration
 

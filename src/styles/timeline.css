@@ -58,5 +58,5 @@
 
 .content__section.timeline {
   height: 100%;
-  overflow-y: auto;
+  position: relative;
 }
