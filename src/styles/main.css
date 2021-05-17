@@ -106,7 +106,7 @@ button {
   width: 50px;
   border-radius: 12.5px;
   background-color: darkgray;
-  transition: background-color 0.15s ease-in;
+  transition: background-color 0.35s ease-out;
 }
 .toggle-control .control:after {
   content: "";

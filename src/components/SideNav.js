@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
-import self from "../assets/sketch_self.png";
+import selfImg from "../assets/sketch_self.png";
 
 export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   let activateTab = (tab, e) => {
@@ -19,7 +19,7 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   return (
     <div className="nav-container">
       <div className="nav-container__logo">
-        <img src={self} alt="Edited profile of Nischal" />
+        <img src={selfImg} alt="Edited profile of Nischal" />
       </div>
       <div className="nav-container__item">
         <ul className="item-list">

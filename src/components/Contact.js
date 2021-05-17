@@ -1,15 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/contact.css";
 import { useForm, ValidationError } from "@formspree/react";
 
 export const ContactForm = () => {
   const [state, handleSubmit] = useForm("mvodzeby");
 
-  return state.succeeded ? (
-    <div className="content-container spacing">
-      <p>Thanks for joining!</p>
-    </div>
-  ) : (
+  return (
     <div className="content-container spacing">
       <div className="content contact">
         <h1>Connect with me!</h1>
@@ -21,6 +17,7 @@ export const ContactForm = () => {
               name="name"
               id="name"
               autocomplete="off"
+              disabled={state.succeeded}
             />
             <label htmlFor="name">Name</label>
           </div>
@@ -30,6 +27,7 @@ export const ContactForm = () => {
               id="email"
               type="email"
               name="email"
+              disabled={state.succeeded}
             />
             <label htmlFor="email">Email</label>
             <ValidationError
@@ -45,6 +43,7 @@ export const ContactForm = () => {
               id="message"
               name="message"
               autocomplete="off"
+              disabled={state.succeeded}
             />
             <label htmlFor="message">Message</label>
             <ValidationError
@@ -59,9 +58,10 @@ export const ContactForm = () => {
             id="email-subject"
             value="Contact Form Submission"
           />
-          <button type="submit" disabled={state.submitting && state.succeeded}>
-            Submit
+          <button type="submit" disabled={state.submitting || state.succeeded}>
+            {state.succeeded ? "Submitted" : "Submit"}
           </button>
+          {state.succeeded ? <p>Thanks for joining!</p> : ""}
         </form>
       </div>
     </div>
