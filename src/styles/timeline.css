@@ -55,3 +55,8 @@
   text-decoration: underline;
   color: var(--link-color);
 }
+
+.content__section.timeline {
+  height: 100%;
+  overflow-y: auto;
+}

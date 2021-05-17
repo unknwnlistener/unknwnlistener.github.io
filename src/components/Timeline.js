@@ -9,7 +9,7 @@ export const Timeline = () => {
     <div className="content-container spacing">
       <div className="content">
         <h1>What I've done</h1>
-        <section className="content__section">
+        <section className="content__section timeline">
           <div className="timeline-path"></div>
           <TimelineContent
             duration={"November 2020 - Present"}
@@ -30,6 +30,11 @@ export const Timeline = () => {
             description={`Worked with Perform Media (www.performmedia.com): A Company to
                 Publisher advertising platform that connected US companies such
                 as Yahoo/MSN, Forbes, Reuters,etc to Publishers.`}
+          ></TimelineContent>
+          <TimelineContent
+            duration={"September 2013 - May 2017"}
+            title={"Don Bosco Institute of Technology, Mumbai"}
+            subtitle={"Bachelors in Engineering, Computer Engineering"}
           ></TimelineContent>
         </section>
       </div>
