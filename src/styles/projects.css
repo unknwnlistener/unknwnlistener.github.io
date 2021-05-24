@@ -1,7 +1,7 @@
 .image-container {
   position: relative;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   width: 400px;
   height: 200px;
   overflow-y: hidden;
@@ -47,4 +47,21 @@
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+}
+
+.project__links > p {
+  display: inline;
+}
+
+.project-container {
+  margin-bottom: 1rem;
+}
+.project-container :is(h1, h2, h3, p) {
+  margin: 0;
+  padding: 0;
+}
+
+.project__links > p + p::before {
+  content: "|";
+  padding: 0 0.5rem;
 }

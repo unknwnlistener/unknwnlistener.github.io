@@ -15,16 +15,25 @@ export const Projects = () => {
       image: waImg,
       altText: "screenshot of Whatsapp Conversation Reader",
       desc: "Web Application to read exported whatsapp conversation in a friendly format",
+      link: "https://bee-wa-reader.netlify.app/",
+      title: "WhatsApp Chat Reader",
+      github: "https://github.com/unknwnlistener/whatsapp-reader",
     },
     {
       image: webImg,
-      altText: "screenshot of Personal Website",
+      altText: "screenshot of Portfolio Website",
       desc: "This website you're on right now! To showcase and summarize who I am and what I've done",
+      link: "#",
+      title: "Portfolio Website",
+      github: "https://github.com/unknwnlistener/unknwnlistener.github.io",
     },
     {
       image: chuckImg,
       altText: "screenshot of Chuck Norris Joke Generator",
       desc: "One of the first React projects I took up with Florin Pop's community to learn React.js",
+      link: "https://chuck-norris-joker.netlify.app/",
+      title: "Chuck Norris Joke Generator",
+      github: "https://github.com/unknwnlistener/chuck-norris-joke-generator",
     },
   ];
   return (
@@ -37,6 +46,9 @@ export const Projects = () => {
               source={proj.image}
               alt={proj.altText}
               desc={proj.desc}
+              link={proj.link}
+              title={proj.title}
+              github={proj.github}
             ></ImageContainer>
           ))}
         </section>
