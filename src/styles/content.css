@@ -38,3 +38,13 @@
 .wip-container p {
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 600px) {
+  .content-container {
+    width: 100%;
+    height: 100%;
+  }
+  .spacing {
+    left: 0;
+  }
+}

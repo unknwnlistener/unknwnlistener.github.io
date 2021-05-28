@@ -6,7 +6,9 @@
   justify-content: space-between;
   width: 300px;
   height: 100%;
+  left: 0;
 }
+
 .nav-container__logo {
   height: 200px;
   width: 200px;
@@ -65,4 +67,12 @@ footer .social-links {
 
 footer .credits {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    position: absolute;
+    overflow-x: hidden;
+    left: -300px;
+  }
 }

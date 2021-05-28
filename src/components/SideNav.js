@@ -28,6 +28,7 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
               <button
                 onClick={() => activateTab(tab)}
                 className={getClassesButton(index)}
+                key={index}
               >
                 {tabTitles[index]}
               </button>
