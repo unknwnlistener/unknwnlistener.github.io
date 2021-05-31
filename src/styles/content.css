@@ -43,6 +43,10 @@
   .content-container {
     width: 100%;
     height: 100%;
+    margin-bottom: 2rem;
+  }
+  .content-container h1 {
+    font-size: 2.5rem;
   }
   .spacing {
     left: 0;
