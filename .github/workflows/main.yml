@@ -33,4 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Running npm deploy,
-          npm run deploy
+          npm run build,
+          gh-pages -d build
