@@ -132,7 +132,4 @@ button {
     min-height: 100vh;
     height: 100%;
   }
-  .toggle-control {
-    display: none;
-  }
 }

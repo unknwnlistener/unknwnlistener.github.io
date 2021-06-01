@@ -1,7 +1,11 @@
+.timeline {
+  --left-distance: -3rem;
+}
+
 .timeline-path {
   position: relative;
   float: left;
-  left: -3rem;
+  left: var(--left-distance);
   height: 100%;
   width: 5px;
   border-radius: 50px;
@@ -19,7 +23,7 @@
 .timeline-content::before {
   position: absolute;
   margin-top: 1.8rem;
-  left: -3rem;
+  left: var(--left-distance);
   content: "";
   height: 5px;
   width: 5px;
@@ -59,4 +63,13 @@
 .content__section.timeline {
   height: 100%;
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    --left-distance: -2rem;
+  }
+  .timeline-path {
+    position: absolute;
+  }
 }
