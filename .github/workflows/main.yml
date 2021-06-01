@@ -28,7 +28,11 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: github authentication
-        run: git remote set-url origin https://unknwnlistener:${{ secrets.GITHUB_TOKEN}}@github.com/unknwnlistener/unknwnlistener.github.io
+        run: |
+          git config user.email "10276779+unknwnlistener@users.noreply.github.com"
+          git config user.name "Github Actions"
+          git remote set-url origin https://unknwnlistener:${{ secrets.GITHUB_TOKEN}}@github.com/unknwnlistener/unknwnlistener.github.io
+      
       - name: publish package
         run: |
           npm install
