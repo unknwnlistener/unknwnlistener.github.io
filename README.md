@@ -12,6 +12,7 @@ If you have any suggestions for thing I could improve on I would love the feedba
 - [x] Update Contact Us Page
 - [x] Add more projects to the Projects section
 - [ ] Make the whole site mobile viewable
+  - [ ] Dark mode toggle on mobile view
 - [ ] Projects: Add title, link to GitHub page, navigation and better description
 - [ ] Timeline: Better descriptions
 - [ ] Add a colour scheme

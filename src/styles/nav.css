@@ -75,7 +75,7 @@ footer .credits {
 
 @media screen and (max-width: 600px) {
   .nav-container {
-    position: absolute;
+    position: fixed;
     overflow-x: hidden;
     left: -300px;
     transition: left 0.5s ease-out;

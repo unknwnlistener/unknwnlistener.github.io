@@ -127,6 +127,11 @@ button {
   h1 {
     font-size: 1.1rem;
   }
+
+  .main-container {
+    min-height: 100vh;
+    height: 100%;
+  }
   .toggle-control {
     display: none;
   }

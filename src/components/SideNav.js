@@ -30,11 +30,10 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   };
   return (
     <>
-      <div className="top-nav">
-        <button
+      <div className="top-nav" onClick={() => toggleSideNav()}>
+        <span
           className={"menu-button" + (toggleClass !== "" ? " active" : "")}
-          onClick={() => toggleSideNav()}
-        ></button>
+        ></span>
       </div>
       <div className={"nav-container " + toggleClass}>
         <div className="nav-container__logo">
@@ -57,9 +56,21 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
         </div>
         <footer className="footer">
           <div className="social-links">
-            <a href="https://github.com/unknwnlistener">github</a>
+            <a
+              target="_"
+              rel="noreferrer"
+              href="https://github.com/unknwnlistener"
+            >
+              github
+            </a>
             <span className="spacer">|</span>
-            <a href="https://linkedin.com/in/nischalabraham">linkedin</a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://linkedin.com/in/nischalabraham"
+            >
+              linkedin
+            </a>
           </div>
           <div className="credits">Coded by Nischal</div>
         </footer>
