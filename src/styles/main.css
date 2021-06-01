@@ -11,6 +11,8 @@
 
   --link-color: var(--blue);
 
+  --gray-100: hsl(0, 0%, 50%);
+
   --mono-font: "Roboto Mono", "Courier New", Courier, monospace;
 }
 .dark-mode {
@@ -71,6 +73,7 @@ button {
 }
 
 /* Toggle button css */
+
 .toggle-control {
   display: block;
   position: absolute;
@@ -118,4 +121,15 @@ button {
   border-radius: 12.5px;
   background: white;
   transition: left 0.15s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .main-container {
+    min-height: 100vh;
+    height: 100%;
+  }
 }
