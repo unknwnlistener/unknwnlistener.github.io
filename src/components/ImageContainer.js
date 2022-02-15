@@ -10,16 +10,20 @@ export const ImageContainer = ({ source, alt, desc, link, title, github }) => {
 
       <h3 className="project__title">{title}</h3>
       <div className="project__links">
-        <p>
-          <a href={link} target="_blank" rel="noreferrer">
-            Site
-          </a>
-        </p>
-        <p>
-          <a href={github} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </p>
+        {link && (
+          <p>
+            <a href={link} target="_blank" rel="noreferrer">
+              Site
+            </a>
+          </p>
+        )}
+        {github && (
+          <p>
+            <a href={github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </p>
+        )}
       </div>
     </div>
   );

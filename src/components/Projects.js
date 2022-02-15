@@ -6,6 +6,7 @@ import { ImageContainer } from "./ImageContainer";
 import waImg from "../assets/WA-reader.png";
 import webImg from "../assets/PersonalWeb-screen.jpg";
 import chuckImg from "../assets/ChuckNorrisJokes.png";
+import fairviewImg from "../assets/FairviewHallChurch.png";
 
 export const Projects = () => {
   // let imageUrl =
@@ -34,6 +35,13 @@ export const Projects = () => {
       link: "https://chuck-norris-joker.netlify.app/",
       title: "Chuck Norris Joke Generator",
       github: "https://github.com/unknwnlistener/chuck-norris-joke-generator",
+    },
+    {
+      image: fairviewImg,
+      altText: "screenshot of Fairview Hall Church landing page",
+      desc: "A Wordpress website built for Fairview Hall Church in Dublin",
+      link: "https://fairviewhall.ie/",
+      title: "Fairview Hall Church website",
     },
   ];
   return (

@@ -66,6 +66,9 @@ ul {
   color: var(--footer-color);
   margin: 1em;
 }
+.footer a {
+  color: var(--link-color);
+}
 
 button {
   cursor: pointer;

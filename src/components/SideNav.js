@@ -72,7 +72,7 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
               linkedin
             </a>
           </div>
-          <div className="credits">Coded by Nischal</div>
+          <div className="credits">Built by Nischal</div>
         </footer>
       </div>
     </>
