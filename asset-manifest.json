@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e2b33b0.chunk.css",
-    "main.js": "/static/js/main.3f3ad155.chunk.js",
-    "main.js.map": "/static/js/main.3f3ad155.chunk.js.map",
+    "main.css": "/static/css/main.72f914d1.chunk.css",
+    "main.js": "/static/js/main.8a991cc5.chunk.js",
+    "main.js.map": "/static/js/main.8a991cc5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5aab4fc2.js",
     "runtime-main.js.map": "/static/js/runtime-main.5aab4fc2.js.map",
     "static/js/2.898587f6.chunk.js": "/static/js/2.898587f6.chunk.js",
@@ -10,9 +10,10 @@
     "static/js/3.2a3d18aa.chunk.js": "/static/js/3.2a3d18aa.chunk.js",
     "static/js/3.2a3d18aa.chunk.js.map": "/static/js/3.2a3d18aa.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2e2b33b0.chunk.css.map": "/static/css/main.2e2b33b0.chunk.css.map",
+    "static/css/main.72f914d1.chunk.css.map": "/static/css/main.72f914d1.chunk.css.map",
     "static/js/2.898587f6.chunk.js.LICENSE.txt": "/static/js/2.898587f6.chunk.js.LICENSE.txt",
     "static/media/ChuckNorrisJokes.66dabd4c.png": "/static/media/ChuckNorrisJokes.66dabd4c.png",
+    "static/media/FairviewHallChurch.4571c6a6.png": "/static/media/FairviewHallChurch.4571c6a6.png",
     "static/media/PersonalWeb-screen.21156fc8.jpg": "/static/media/PersonalWeb-screen.21156fc8.jpg",
     "static/media/WA-reader.a8dde06b.png": "/static/media/WA-reader.a8dde06b.png",
     "static/media/sketch_self.7f6ccc0c.png": "/static/media/sketch_self.7f6ccc0c.png"
@@ -20,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.5aab4fc2.js",
     "static/js/2.898587f6.chunk.js",
-    "static/css/main.2e2b33b0.chunk.css",
-    "static/js/main.3f3ad155.chunk.js"
+    "static/css/main.72f914d1.chunk.css",
+    "static/js/main.8a991cc5.chunk.js"
   ]
 }
