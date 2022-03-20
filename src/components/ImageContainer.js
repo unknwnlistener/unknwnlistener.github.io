@@ -3,10 +3,12 @@ import React from "react";
 export const ImageContainer = ({ source, alt, desc, link, title, github }) => {
   return (
     <div className="project-container">
-      <div class="image-container">
-        <img src={source} alt={alt} />
-        <span class="image__desc">{desc}</span>
-      </div>
+      <a href={link} target={link === "#" ? "" : "_blank"} rel="noreferrer">
+        <div class="image-container">
+          <img src={source} alt={alt} />
+          <span class="image__desc">{desc}</span>
+        </div>
+      </a>
 
       <h3 className="project__title">{title}</h3>
       <div className="project__links">

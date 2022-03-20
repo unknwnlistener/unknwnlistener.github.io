@@ -14,11 +14,19 @@ If you have any suggestions for thing I could improve on I would love the feedba
 - [ ] Make the whole site mobile viewable
   - [ ] Dark mode toggle on mobile view
 - [ ] Projects: Add title, link to GitHub page, navigation and better description
+  - [x] Link to Github Page
+  - [ ] Navigation
+  - [ ] Update description view
 - [ ] Timeline: Better descriptions
 - [ ] Add a colour scheme
+
+## Design in Progress
+
+[Figma Page](https://www.figma.com/file/dPLR7yWhRIn3PcVsmXdOZK/Wireframing---Portfolio-Website?node-id=107%3A276)
 
 ## Inspiration
 
 - [Cassidy Williams](https://cassidoo.co/)
 - [Jemima Abu](https://www.jemimaabu.com/)
 - [Marcus Artis](https://marcusartis.pixpa.com/)
+- [Graham McDonnell](https://www.greymac.com/)

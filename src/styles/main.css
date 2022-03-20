@@ -1,17 +1,26 @@
 :root {
-  --black: #000;
-  --white: #fff;
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
   --blue: blue;
   --cyan: cyan;
 
-  --font-color: var(--black);
-  --bg-color: var(--white);
+  --color-sat: 0%;
+  --color-hue: 0;
 
-  --footer-color: var(--black);
+  --color-100: hsl(var(--color-hue), var(--color-sat), 10%);
+  --color-200: hsl(var(--color-hue), var(--color-sat), 20%);
+  --color-300: hsl(var(--color-hue), var(--color-sat), 40%);
+  --color-400: hsl(var(--color-hue), var(--color-sat), 70%);
+  --color-500: hsl(var(--color-hue), var(--color-sat), 90%);
+
+  --font-color: var(var(--color-100));
+  --bg-color: var(var(--color-500));
+
+  --footer-color: var(--color-200);
 
   --link-color: var(--blue);
 
-  --gray-100: hsl(0, 0%, 50%);
+  --gray-100: var(--color-300);
 
   --mono-font: "Roboto Mono", "Courier New", Courier, monospace;
 }
@@ -24,6 +33,9 @@
 
   --footer-color: var(--black);
   --link-color: var(--cyan);
+}
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -72,7 +84,12 @@ ul {
 
 button {
   cursor: pointer;
-  color: var(--font-color);
+  padding: 0.5rem;
+  width: 10rem;
+  font-size: 1.2rem;
+}
+button:disabled {
+  cursor: default;
 }
 
 /* Toggle button css */

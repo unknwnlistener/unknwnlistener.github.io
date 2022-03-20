@@ -1,8 +1,13 @@
+.contact {
+  align-items: center;
+}
+
 form {
   display: flex;
   flex-flow: column nowrap;
   width: 50%;
   color: black;
+  align-items: center;
 }
 
 .input-container {
@@ -34,8 +39,8 @@ form .form__input:focus + label {
   margin-top: 0;
   top: 0;
   font-size: 0.7rem;
-  background-color: hsl(0, 0%, 50%);
-  width: 100%;
+  background-color: hsla(0, 0%, 0%, 20%);
+  /* width: 100%; */
 }
 
 .input-container textarea {

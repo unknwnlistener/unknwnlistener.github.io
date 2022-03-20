@@ -26,6 +26,9 @@
   display: flex;
   flex-flow: column nowrap;
 }
+.content p {
+  text-align: justify;
+}
 
 .wip-container {
   color: var(--font-color);

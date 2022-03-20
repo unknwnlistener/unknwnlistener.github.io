@@ -40,10 +40,12 @@
 
 .item-list button {
   padding: 1em;
-  background-color: var(--white);
+  color: var(--font-color);
+  background-color: var(--bg-color);
   border: none;
   margin: 1em 0;
   font-size: 1.2rem;
+  width: 100%;
 }
 
 .item-list__button:hover {
