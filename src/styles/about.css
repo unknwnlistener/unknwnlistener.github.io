@@ -1,3 +1,7 @@
 .resume {
   width: fit-content;
 }
+
+.more-readable {
+  line-height: 1.9;
+}

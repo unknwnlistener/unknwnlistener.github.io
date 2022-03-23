@@ -19,6 +19,7 @@ If you have any suggestions for thing I could improve on I would love the feedba
   - [ ] Update description view
 - [ ] Timeline: Better descriptions
 - [ ] Add a colour scheme
+- [ ] Gradient on hover
 
 ## Design in Progress
 

@@ -12,7 +12,7 @@
 }
 
 .content-container h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--header-font);
   font-size: 3.5rem;
 }
 .content-container .large-p {

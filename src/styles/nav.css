@@ -67,8 +67,13 @@ footer {
 footer .social-links {
   margin: 0 auto;
 }
-.footer .social-links .spacer {
+footer .social-links a {
+  color: var(--font-color);
   margin: 0 1rem;
+  height: auto;
+}
+footer .social-links a:hover {
+  color: var(--gray-100);
 }
 
 footer .credits {

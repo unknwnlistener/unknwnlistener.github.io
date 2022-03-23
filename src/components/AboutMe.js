@@ -11,7 +11,7 @@ export const AboutMe = () => {
           Hi there!
           <br /> My name is Nischal Abraham
         </h1>
-        <p className="large-p">
+        <p className="large-p more-readable">
           I have a lot of studying done but perhaps not a lot to show for it.
           I've discovered there is always so much more to learn and being static
           is the same as moving backwards. I'm still quite new to a lot of the

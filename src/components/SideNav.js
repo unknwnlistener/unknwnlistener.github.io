@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "../styles/nav.css";
 import selfImg from "../assets/sketch_self.png";
+import { ReactComponent as GithubIcon } from "../icons/github.svg";
+import { ReactComponent as LinkedinIcon } from "../icons/linkedin.svg";
 
 export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   let [toggleClass, setToggleClass] = useState("");
+  let iconSize = 40;
 
   let activateTab = (tab, e) => {
     console.log(e);
@@ -61,15 +64,14 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
               rel="noreferrer"
               href="https://github.com/unknwnlistener"
             >
-              github
+              <GithubIcon width={iconSize} height={iconSize} />
             </a>
-            <span className="spacer">|</span>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://linkedin.com/in/nischalabraham"
             >
-              linkedin
+              <LinkedinIcon width={iconSize} height={iconSize} />
             </a>
           </div>
           <div className="credits">Built by Nischal</div>

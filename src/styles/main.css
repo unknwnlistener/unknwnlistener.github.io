@@ -22,7 +22,9 @@
 
   --gray-100: var(--color-300);
 
+  --body-font: "Readex Pro", sans-serif;
   --mono-font: "Roboto Mono", "Courier New", Courier, monospace;
+  --header-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .dark-mode {
   --black: #fff;
@@ -43,7 +45,7 @@ body {
   width: 100%;
   color: var(--font-color);
   font-size: 14px;
-  font-family: var(--mono-font);
+  font-family: var(--body-font);
 }
 
 h1 {
@@ -51,7 +53,7 @@ h1 {
 }
 
 p {
-  font-family: var(--mono-font);
+  font-family: var(--body-font);
 }
 
 .mono-font {
