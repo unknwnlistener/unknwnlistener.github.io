@@ -1,11 +1,14 @@
 .timeline {
-  --left-distance: -3rem;
+  --timeline-distance: 2rem;
+  --timeline-padding: 1rem;
+  --timeline-spacing: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .timeline-path {
-  position: relative;
-  float: left;
-  left: var(--left-distance);
   height: 100%;
   width: 5px;
   border-radius: 50px;
@@ -14,16 +17,28 @@
 
 .timeline-content {
   margin-top: 0;
+  padding: var(--timeline-padding);
+  border: 1px solid var(--black);
+  min-width: fit-content;
+  border-radius: 10px;
 }
 
-.timeline-content ~ .timeline-content {
-  margin-top: 3rem;
+.left-elements > .timeline-content ~ .timeline-content {
+  margin-top: var(--timeline-spacing);
+}
+.left-elements > .timeline-content {
+  margin-right: var(--timeline-distance);
 }
 
-.timeline-content::before {
+.right-elements > .timeline-content {
+  margin-top: var(--timeline-spacing);
+  margin-left: var(--timeline-distance);
+}
+
+/* .left-elements > .timeline-content::before, */
+.right-elements > .timeline-content::before {
   position: absolute;
   margin-top: 1.8rem;
-  left: var(--left-distance);
   content: "";
   height: 5px;
   width: 5px;
@@ -31,6 +46,17 @@
   border-radius: 50%;
   box-shadow: 0 0 0 2px var(--black), 0 0 0 4px var(--white);
 }
+
+.right-elements > .timeline-content::before {
+  margin-left: calc(
+    (var(--timeline-distance) + var(--timeline-padding) + 0.35rem) * -1
+  );
+}
+/* .left-elements > .timeline-content::before {
+  margin-left: calc(
+    var(--timeline-distance) + var(--timeline-padding) + 20.65rem
+  );
+} */
 
 .content__section .duration {
   font-size: 0.8rem;
@@ -50,7 +76,7 @@
 
 .content__section .description {
   font-size: 1rem;
-  width: 80%;
+  max-width: 30rem;
   padding-left: 1rem;
   text-align: justify;
 }
@@ -60,16 +86,17 @@
   color: var(--link-color);
 }
 
-.content__section.timeline {
-  height: 100%;
-  position: relative;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .timeline {
-    --left-distance: -2rem;
+    --timeline-distance: 0;
+    --timeline-spacing: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .timeline-path {
-    position: absolute;
+    display: none;
+  }
+  .timeline-content::before {
+    display: none;
   }
 }

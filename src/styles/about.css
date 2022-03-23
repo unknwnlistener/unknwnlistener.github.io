@@ -1,4 +1,14 @@
-.resume {
+.resume-click {
+  display: flex;
+  justify-content: end;
+}
+
+.disclaimer {
+  color: hsl(0, 100%, 60%);
+  font-style: italic;
+}
+
+.resume-click > a {
   width: fit-content;
 }
 

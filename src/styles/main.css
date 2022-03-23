@@ -61,7 +61,7 @@ p {
 }
 
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-color);
   position: relative;
   display: flex;

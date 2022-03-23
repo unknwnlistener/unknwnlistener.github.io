@@ -20,13 +20,15 @@ export const AboutMe = () => {
           love to talk!
           <br />
         </p>
-        <p>
+        <p className="disclaimer">
           This site is still a work in progress. Do come back and check in from
           time to time and things may look different 😊.
         </p>
-        <a href={resume} target="_blank" rel="noreferrer" className="resume">
-          <button>Resume</button>
-        </a>
+        <div className="resume-click">
+          <a href={resume} target="_blank" rel="noreferrer">
+            <button>Resume</button>
+          </a>
+        </div>
       </section>
     </div>
   );

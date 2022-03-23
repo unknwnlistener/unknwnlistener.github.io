@@ -4,6 +4,8 @@
   color: var(--font-color);
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: min(3em, 50px);
 }
 
 .spacing {
@@ -19,7 +21,7 @@
   font-size: 1.2rem;
 }
 .content {
-  height: 80%;
+  height: 100%;
   width: 70%;
   margin: 0 auto;
   position: relative;
@@ -40,6 +42,10 @@
 
 .wip-container p {
   font-size: 1.5rem;
+}
+
+.bottom-pad-2 {
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 600px) {
