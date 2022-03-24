@@ -1,6 +1,6 @@
 .resume-click {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .disclaimer {

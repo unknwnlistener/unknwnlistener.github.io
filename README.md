@@ -8,19 +8,19 @@ If you have any suggestions for thing I could improve on I would love the feedba
 
 # Pending Tasks
 
-- [x] Change Experience to a Timeline
-- [x] Update Contact Us Page
-- [x] Add more projects to the Projects section
 - [ ] Make the whole site mobile viewable
   - [ ] Dark mode toggle on mobile view
 - [ ] Projects: Add title, link to GitHub page, navigation and better description
-  - [x] Link to Github Page
   - [ ] Navigation
   - [ ] Update description view
+  - [x] Link to Github Page
 - [ ] Timeline: Better descriptions
 - [ ] Add a colour scheme
 - [ ] Gradient on hover - links
-- [ ] Add location to Timeline for each card
+- [x] Add location to Timeline for each card
+- [x] Change Experience to a Timeline
+- [x] Update Contact Us Page
+- [x] Add more projects to the Projects section
 
 ## Design in Progress
 

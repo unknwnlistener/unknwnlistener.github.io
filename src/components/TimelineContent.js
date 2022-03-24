@@ -8,9 +8,11 @@ export const TimelineContent = ({
   description,
   link,
   linkDesc,
+  location,
 }) => {
   return (
     <div className="timeline-content">
+      <span className="location">{location}</span>
       <div className="duration">{duration}</div>
       <div className="title">{title}</div>
       <div className="subtitle">{subtitle}</div>

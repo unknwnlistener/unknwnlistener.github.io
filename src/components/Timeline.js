@@ -13,6 +13,7 @@ export const Timeline = () => {
           <div className="left-elements">
             <TimelineContent
               duration={"November 2020 - Present"}
+              location={"IE"}
               title={"Postal Bible School"}
               subtitle={"Office Administration"}
               link={"https://www.postalbibleschool.ie/"}
@@ -20,6 +21,7 @@ export const Timeline = () => {
             ></TimelineContent>
             <TimelineContent
               duration={"July 2017 - August 2019"}
+              location={"IN"}
               title={"Media.net"}
               subtitle={"Web Application Developer"}
               description={`Worked with Perform Media (www.performmedia.com): A Company to
@@ -31,11 +33,13 @@ export const Timeline = () => {
           <div className="right-elements">
             <TimelineContent
               duration={"September 2019 - July 2020"}
+              location={"IE"}
               title={"National University of Ireland, Maynooth"}
               subtitle={"Masters in Computer Science"}
             ></TimelineContent>
             <TimelineContent
               duration={"September 2013 - May 2017"}
+              location={"IN"}
               title={"Don Bosco Institute of Technology, Mumbai"}
               subtitle={"Bachelors in Engineering, Computer Engineering"}
             ></TimelineContent>

@@ -58,6 +58,11 @@
   );
 } */
 
+.timeline-content .location {
+  float: right;
+  padding-right: 0.25rem;
+}
+
 .content__section .duration {
   font-size: 0.8rem;
   margin-bottom: 0.25rem;
@@ -66,6 +71,11 @@
   /* text-align: center; */
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.content__section .location {
+  text-transform: capitalize;
+  font-size: 1rem;
 }
 
 .content__section .subtitle {

@@ -74,7 +74,7 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
               <LinkedinIcon width={iconSize} height={iconSize} />
             </a>
           </div>
-          <div className="credits">Built by Nischal</div>
+          <div className="credits">Built by Me :)</div>
         </footer>
       </div>
     </>

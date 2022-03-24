@@ -13,8 +13,8 @@
   --color-400: hsl(var(--color-hue), var(--color-sat), 70%);
   --color-500: hsl(var(--color-hue), var(--color-sat), 90%);
 
-  --font-color: var(var(--color-100));
-  --bg-color: var(var(--color-500));
+  --font-color: var(--color-100);
+  --bg-color: var(--color-500);
 
   --footer-color: var(--color-200);
 
