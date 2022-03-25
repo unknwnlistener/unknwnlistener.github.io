@@ -91,11 +91,6 @@
   text-align: justify;
 }
 
-.content__section a {
-  text-decoration: underline;
-  color: var(--link-color);
-}
-
 @media screen and (max-width: 1024px) {
   .timeline {
     --timeline-distance: 0;

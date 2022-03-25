@@ -46,6 +46,7 @@
   margin: 1em 0;
   font-size: 1.2rem;
   width: 100%;
+  box-shadow: initial;
 }
 
 .item-list__button:hover {
@@ -63,17 +64,20 @@
 footer {
   display: flex;
   flex-flow: column nowrap;
+  font-size: 1rem;
+  color: var(--footer-color);
+  margin: 1em;
 }
 footer .social-links {
   margin: 0 auto;
 }
 footer .social-links a {
-  color: var(--font-color);
   margin: 0 1rem;
   height: auto;
+  color: var(--font-color);
 }
 footer .social-links a:hover {
-  color: var(--gray-100);
+  color: var(--link-color);
 }
 
 footer .credits {

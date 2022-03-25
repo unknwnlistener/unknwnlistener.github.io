@@ -1,11 +1,20 @@
 :root {
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
-  --blue: blue;
-  --cyan: cyan;
+  --blue: hsl(240, 100%, 50%);
+  --cyan-300: hsl(180, 100%, 50%);
+  --cyan-200: hsl(180, 100%, 30%);
+
+  --red-500: hsl(12, 100%, 31%);
+  --red-400: hsl(21, 99%, 35%);
+  --red-300: hsl(30, 96%, 43%);
+  --red-200: hsl(39, 100%, 47%);
+  --red-100: hsl(45, 100%, 50%);
 
   --color-sat: 0%;
   --color-hue: 0;
+  --link-gradient: 0deg, hsl(276, 51%, 47%) 0%, hsl(0, 98%, 55%) 50%,
+    hsl(35, 97%, 63%) 100%;
 
   --color-100: hsl(var(--color-hue), var(--color-sat), 10%);
   --color-200: hsl(var(--color-hue), var(--color-sat), 20%);
@@ -15,12 +24,10 @@
 
   --font-color: var(--color-100);
   --bg-color: var(--color-500);
+  --link-color: var(--red-300);
+  --link-hover-color: var(--red-200);
 
   --footer-color: var(--color-200);
-
-  --link-color: var(--blue);
-
-  --gray-100: var(--color-300);
 
   --body-font: "Readex Pro", sans-serif;
   --mono-font: "Roboto Mono", "Courier New", Courier, monospace;
@@ -34,7 +41,8 @@
   --bg-color: var(--white);
 
   --footer-color: var(--black);
-  --link-color: var(--cyan);
+  --link-color: var(--cyan-300);
+  --link-hover-color: var(--cyan-200);
 }
 * {
   box-sizing: border-box;
@@ -56,6 +64,33 @@ p {
   font-family: var(--body-font);
 }
 
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  border: none;
+  box-shadow: 0 0 0 1px var(--black);
+}
+
+button:hover {
+  font-weight: 800;
+  background-color: var(--link-color);
+  background: linear-gradient(var(--link-gradient));
+  background-clip: text;
+  background: -webkit-linear-gradient(var(--link-gradient));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .mono-font {
   font-family: var(--mono-font);
 }
@@ -75,20 +110,12 @@ ul {
   margin: 0;
 }
 
-.footer {
-  font-size: 1rem;
-  color: var(--footer-color);
-  margin: 1em;
-}
-.footer a {
-  color: var(--link-color);
-}
-
 button {
   cursor: pointer;
   padding: 0.5rem;
   width: 10rem;
   font-size: 1.2rem;
+  font-family: var(--mono-font);
 }
 button:disabled {
   cursor: default;
