@@ -11,6 +11,12 @@
   --red-200: hsl(39, 100%, 47%);
   --red-100: hsl(45, 100%, 50%);
 
+  --gray-500: hsl(0, 0%, 20%);
+  --gray-400: hsl(0, 0%, 30%);
+  --gray-300: hsl(0, 0%, 45%);
+  --gray-200: hsl(0, 0%, 65%);
+  --gray-100: hsl(0, 0%, 85%);
+
   --color-sat: 0%;
   --color-hue: 0;
   --link-gradient: 0deg, hsl(276, 51%, 47%) 0%, hsl(0, 98%, 55%) 50%,
@@ -119,57 +125,6 @@ button {
 }
 button:disabled {
   cursor: default;
-}
-
-/* Toggle button css */
-
-.toggle-control {
-  display: block;
-  position: absolute;
-  right: 0;
-  padding-left: 50px;
-  margin: 12px;
-  cursor: pointer;
-  font-size: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  z-index: 99999;
-}
-.toggle-control input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.toggle-control input:checked ~ .control {
-  background-color: dodgerblue;
-}
-.toggle-control input:checked ~ .control:after {
-  left: 30px;
-}
-.toggle-control .control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 50px;
-  border-radius: 12.5px;
-  background-color: darkgray;
-  transition: background-color 0.35s ease-out;
-}
-.toggle-control .control:after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  width: 15px;
-  height: 15px;
-  border-radius: 12.5px;
-  background: white;
-  transition: left 0.15s ease-in;
 }
 
 @media screen and (max-width: 600px) {

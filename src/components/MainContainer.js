@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../styles/main.css";
+import "../styles/dark-mode.css";
+import { MoonIcon } from "../icons/moon";
 import { SideNav } from "./SideNav";
 import { AboutMe } from "./AboutMe";
 import { Timeline } from "./Timeline";
@@ -33,20 +35,21 @@ export const MainContainer = () => {
   }
 
   let toggleDark = () => {
-    console.log("Dark toggle");
     setDarkToggle(!darkToggle);
   };
 
   return (
     <div className={`main-container ${darkToggle ? "dark-mode" : ""}`}>
-      <label className="toggle-control">
-        <input
-          type="checkbox"
-          defaultChecked={false}
-          onChange={() => toggleDark()}
+      <button
+        title="Click here to toggle dark mode"
+        className="toggle-dark-mode"
+        onClick={() => toggleDark()}
+      >
+        <MoonIcon
+          fill={darkToggle ? "currentColor" : "none"}
+          stroke={darkToggle ? "none" : "currentColor"}
         />
-        <span className="control"></span>
-      </label>
+      </button>
       <SideNav
         tabTitles={tabTitles}
         tabList={tabs}
