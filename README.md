@@ -16,9 +16,10 @@ If you have any suggestions for thing I could improve on I would love the feedba
   - [x] Link to Github Page
 - [ ] Timeline: Better descriptions
 - [ ] Add a colour scheme
-- [ ] Change dark mode toggle to a button with symbol for better understanding
 - [ ] Add symbols for Side Nav links
   - [ ] Mobile view - only symbols as bottom/top nav bar
+- [x] Button css modifications should be assigned to a class not the html tag
+- [x] Change dark mode toggle to a button with symbol for better understanding
 - [x] Gradient on hover - links
 - [x] Add location to Timeline for each card
 - [x] Change Experience to a Timeline

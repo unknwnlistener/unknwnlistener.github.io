@@ -58,7 +58,11 @@ export const ContactForm = () => {
             id="email-subject"
             value="Contact Form Submission"
           />
-          <button type="submit" disabled={state.submitting || state.succeeded}>
+          <button
+            className="btn"
+            type="submit"
+            disabled={state.submitting || state.succeeded}
+          >
             {state.succeeded ? "Submitted" : "Submit"}
           </button>
           {state.succeeded ? <p>Thanks for joining!</p> : ""}

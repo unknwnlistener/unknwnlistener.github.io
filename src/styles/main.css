@@ -80,23 +80,6 @@ a:hover {
   text-decoration: none;
 }
 
-button {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  border: none;
-  box-shadow: 0 0 0 1px var(--black);
-}
-
-button:hover {
-  font-weight: 800;
-  background-color: var(--link-color);
-  background: linear-gradient(var(--link-gradient));
-  background-clip: text;
-  background: -webkit-linear-gradient(var(--link-gradient));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .mono-font {
   font-family: var(--mono-font);
 }

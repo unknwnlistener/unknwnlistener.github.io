@@ -26,7 +26,7 @@ export const AboutMe = () => {
         </p>
         <div className="resume-click">
           <a href={resume} target="_blank" rel="noreferrer">
-            <button>Resume</button>
+            <button className="btn">Resume</button>
           </a>
         </div>
       </section>

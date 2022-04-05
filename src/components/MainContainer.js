@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/main.css";
 import "../styles/dark-mode.css";
+import "../styles/button.css";
 import { MoonIcon } from "../icons/moon";
 import { SideNav } from "./SideNav";
 import { AboutMe } from "./AboutMe";

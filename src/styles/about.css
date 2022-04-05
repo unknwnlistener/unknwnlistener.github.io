@@ -4,7 +4,7 @@
 }
 
 .disclaimer {
-  color: hsl(0, 100%, 60%);
+  color: var(--red-300);
   font-style: italic;
 }
 

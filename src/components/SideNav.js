@@ -18,7 +18,7 @@ export const SideNav = ({ tabTitles, tabList, currentTab, setTab }) => {
   };
 
   let getClassesButton = (i) => {
-    let classList = ["item-list__button", "mono-font"];
+    let classList = ["item-list__button", "mono-font", "btn"];
     if (currentTab === tabList[i]) classList.unshift("active-button");
     return classList.join(" ");
   };
